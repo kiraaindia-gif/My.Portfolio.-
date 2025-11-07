@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pankaj Singh Bhojak | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Pankaj Singh Bhojak</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Hello, I'm <span class="highlight">Pankaj Singh Bhojak</span></h2>
+    <p>Web Developer | Designer | Creator</p>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      I'm <strong>Pankaj Singh Bhojak</strong>, a passionate web developer who loves building creative and responsive websites.
+      I enjoy solving problems with clean and efficient code, and I'm constantly learning new technologies to improve my skills.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-list">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">MongoDB</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-list">
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio website using HTML, CSS, and JS.</p>
+      </div>
+      <div class="project">
+        <h3>Tic Tac Toe Game</h3>
+        <p>A fun browser-based Tic Tac Toe game built with JavaScript.</p>
+      </div>
+      <div class="project">
+        <h3>Weather App</h3>
+        <p>An app that shows real-time weather using an API integration.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <form class="contact-form" onsubmit="sendMessage(event)">
+      <div class="input-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </div>
+      <div class="input-group">
+        <label for="email">Gmail</label>
+        <input type="email" id="email" placeholder="Enter your Gmail" pattern=".+@gmail\.com" required />
+      </div>
+      <div class="input-group">
+        <label for="mobile">Mobile Number</label>
+        <input type="tel" id="mobile" placeholder="Enter 10-digit mobile number" pattern="[0-9]{10}" required />
+      </div>
+      <div class="input-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" rows="5" placeholder="Type your message here..." required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Pankaj Singh Bhojak. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
